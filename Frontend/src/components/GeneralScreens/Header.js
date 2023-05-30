@@ -87,9 +87,9 @@ const Header = () => {
 
                             {/* //!hiding login and addStory functanilty for now from frontend */}
 
-                            {/* <Link className='login-link' to="/login"> Login </Link> */}
+                            <Link className='login-link' to="/login"> Login </Link>
 
-                            {/* <Link className='register-link' to="/register"> Get Started</Link> */}
+                            <Link className='register-link' to="/register"> Get Started</Link>
                         </div>
 
                     }

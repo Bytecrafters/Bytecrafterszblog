@@ -31,7 +31,7 @@
 
 .story-general-info {
     width: 100%;
-    height: 65px;
+    height: 100%;
     background-color: #f4f7fd;
     display: flex;
     justify-content: space-between;
@@ -274,3 +274,17 @@ li.story-readtime {
     color: #0063a5;
     cursor: pointer;
 }
+/*  */
+.image-container {
+    width: 300px; /* Adjust the width and height as needed */
+    height: 200px;
+    overflow: hidden; /* Hide any overflowing content */
+  }
+  
+  .image-container img {
+    width: 100%; /* Scale the image to fit the container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Crop the image to fit the container */
+  }
+  
+  

@@ -13,3 +13,4 @@ const deleteImageFile =(req ,deleteImage) => {
 
 
 module.exports = deleteImageFile
+

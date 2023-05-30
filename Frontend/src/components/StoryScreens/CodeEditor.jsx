@@ -8,17 +8,6 @@ import 'codemirror/mode/javascript/javascript';
 const CodeEditor = ({ code, onChange }) => {
   const editorRef = useRef(null);
 
-  // const handleCopyCode = () => {
-  //   if (editorRef.current) {
-  //     const textArea = document.createElement('textarea');
-  //     textArea.value = code;
-  //     document.body.appendChild(textArea);
-  //     textArea.select();
-  //     document.execCommand('copy');
-  //     document.body.removeChild(textArea);
-  //   }
-  // };
-
   const handleChange = (editor, data, value) => {
     onChange(value);
   };
@@ -37,7 +26,7 @@ const CodeEditor = ({ code, onChange }) => {
           lineNumbers: true,
         }}
       />
-      {/* <button onClick={handleCopyCode}>Copy Code</button> */}
+
     </div>
   );
 };

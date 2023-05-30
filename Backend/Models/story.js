@@ -17,15 +17,29 @@ const StorySchema = new mongoose.Schema({
         unique: true,
         minlength: [4, "Please provide a title least 4 characters "],
     },
+    // changes
+    imgurl: {
+        type: String,
+        required: [true, "Please provide a imgUrl"],
+        unique: true,
+       
+    },
     content: {
         type: String,
         required: [true, "Please a provide a content "],
         minlength: [10, "Please provide a content least 10 characters "],
     },
-    image: {
+    code:{
         type: String,
-        default: "default.jpg"
+        required: [true, "Please a provide a content "],
+        minlength: [10, "Please provide a content least 10 characters "],
     },
+    // image: {
+    //     type: String,
+    //     default: "default.jpg"
+    // },
+
+    
     readtime: {
         type: Number,
         default: 3

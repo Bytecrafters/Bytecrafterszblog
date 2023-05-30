@@ -10,6 +10,7 @@ const router = express.Router() ;
 router.post("/addstory" ,[getAccessToRoute, imageupload.single("image")],addStory)
 
 
+
 router.post("/:slug", checkStoryExist, detailStory)
 
 router.post("/:slug/like",[getAccessToRoute,checkStoryExist] ,likeStory)

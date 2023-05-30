@@ -1463,6 +1463,13 @@ module-details-from-path@^1.0.3:
   resolved "https://registry.npmjs.org/module-details-from-path/-/module-details-from-path-1.0.3.tgz"
   integrity sha512-ySViT69/76t8VhE1xXHK6Ch4NcDd26gx0MzKXLO+F7NOtnqH68d9zF94nT8ZWSxXh8ELOERsnJO/sWt1xZYw5A==
 
+mongo@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/mongo/-/mongo-0.1.0.tgz"
+  integrity sha512-2MPq+GCNKhah0V/g/HIQI/S1h6Ycd87KPuXAITkeXWT6wncvABFxOaXdzCKlRvLSQRUkDimllrRrhoHUTD8usg==
+  dependencies:
+    mongodb "*"
+
 mongodb-connection-string-url@^2.3.2:
   version "2.4.1"
   resolved "https://registry.npmjs.org/mongodb-connection-string-url/-/mongodb-connection-string-url-2.4.1.tgz"
@@ -1471,7 +1478,7 @@ mongodb-connection-string-url@^2.3.2:
     "@types/whatwg-url" "^8.2.1"
     whatwg-url "^11.0.0"
 
-mongodb@4.2.2:
+mongodb@*, mongodb@4.2.2:
   version "4.2.2"
   resolved "https://registry.npmjs.org/mongodb/-/mongodb-4.2.2.tgz"
   integrity sha512-zt8rCTnTKyMQppyt63qMnrLM5dbADgUk18ORPF1XbtHLIYCyc9hattaYHi0pqMvNxDpgGgUofSVzS+UQErgTug==

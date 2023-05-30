@@ -11,12 +11,9 @@ import "../../Css/AddStory.css";
 import CodeEditor from "./CodeEditor";
 
 const AddStory = () => {
- 
-
   const handleCodeChange = (newCode) => {
     setCode(newCode);
   };
- 
 
   const { config } = useContext(AuthContext);
   const imageEl = useRef(null);
@@ -26,9 +23,10 @@ const AddStory = () => {
   const [content, setContent] = useState("");
   const [success, setSuccess] = useState("");
   const [error, setError] = useState("");
-  const [code, setCode] = useState("");//!code editor
+  const [code, setCode] = useState(""); //!code editor
+  const [imgurl, setImgUrl] = useState("");
 
-  const drivelink='http://drive.google.com/uc?export=view&id=';
+  const drivelink = "http://drive.google.com/uc?export=view&id=";
 
   //! after submit clear all input
   const clearInputs = () => {
@@ -36,6 +34,7 @@ const AddStory = () => {
     setContent("");
     setImage("");
     setCode("");
+    setImgUrl("");
     editorEl.current.editor.setData("");
     imageEl.current.value = "";
   };
@@ -46,8 +45,8 @@ const AddStory = () => {
     formdata.append("title", title);
     formdata.append("image", image);
     formdata.append("content", content);
-    formdata.append("code", code);//!
-
+    formdata.append("code", code); //!
+    formdata.append("imgurl", imgurl); //!
 
     try {
       const { data } = await axios.post("/story/addstory", formdata, config);
@@ -96,15 +95,13 @@ const AddStory = () => {
           ref={editorEl}
         />
 
-
         <div>
           <div>
             <h1>Blog Editor</h1>
-            <CodeEditor code={code} onChange={handleCodeChange}  />
+            <CodeEditor code={code} onChange={handleCodeChange} />
             {/* Other form elements for heading, text, upload date, etc. */}
           </div>
         </div>
-
 
         <div class="StoryImageField">
           <AiOutlineUpload />
@@ -113,21 +110,16 @@ const AddStory = () => {
               ? image.name
               : " Include a high-quality image in your story to make it more inviting to readers."}
           </div>
+          {/* //ading image using url  */}
           <input
-            name="image"
-            type="file"
-          
-            ref={imageEl}
-            onChange={(e) => {
-              setImage(e.target.files[0]);
-            }}
+            type="text"
+            required
+            id="imgurl"
+            placeholder="imageUrl"
+            onChange={(e) => setImgUrl(e.target.value)}
+            value={imgurl}
           />
-        
         </div>
-
-
-        
-
 
         <button
           type="submit"
@@ -142,7 +134,3 @@ const AddStory = () => {
 };
 
 export default AddStory;
-
-
-
-

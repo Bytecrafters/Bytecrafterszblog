@@ -2,9 +2,11 @@
   @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root{
-    --primary-color:#ffffff;
-    --secondary-color:#f2f2f2;
-    --focus-color:rgb(20,20,20);
+    --primary-color:#e9e8e5;
+    --secondary-color:#181E29;
+    --focus-color:#F35E2C;
+    --secondary-focus-color:#669D9E;
+    --complement-color:#956F5D;
 
     --heading-font: 'Libre Franklin', 'Open Sans' ,sans-serif;
 }

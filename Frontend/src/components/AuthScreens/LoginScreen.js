@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import "../../Css/Login.css"
 import { Link, useNavigate } from "react-router-dom";
+import loginImg from '../../assets/images/login/login.png';
 const LoginScreen = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -105,7 +106,7 @@ const LoginScreen = () => {
 
         <div className="login-banner-section ">
 
-          <img src="login.png" alt="banner" width="400px" />
+          <img src={loginImg} alt="banner" width="400px" />
         </div>
 
       </div>

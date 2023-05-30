@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap&family=Inter&family=Signika+Negative:wght@500&display=swap');
+@import url('./Theam.css');
 .Inclusive-register-page {
     position: relative;
     width: 100vw;
@@ -6,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EDF0F7;
+    background-color:var(--secondary-color) ;
 }
 
 .register-big-wrapper {
@@ -14,7 +15,7 @@
     max-width: 1100px;
     height: 95%;
     border-radius: 9px;
-    background-color: white;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -23,10 +24,11 @@
 .section-wrapper {
     width: 50%;
     padding: 1.6rem 4rem;
+   
 }
 
 .register-banner-section {
-    background-color: #0507D4;
+    background-color: var(--secondary-focus-color);
     border-radius: 9px 0 0 9px;
     width: 50%;
     display: flex;
@@ -61,13 +63,13 @@
 }
 
 .top-suggest_login span {
-    color: #ABB8c5;
+    color: #797575;
     margin-right: 8px;
 }
 
 .top-suggest_login a {
     font-size: 0.7rem;
-    color: rgb(13, 16, 163);
+    color: var(--focus-color);
     text-decoration: none;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
@@ -83,10 +85,11 @@
     margin-bottom: 1.2rem;
     font-size: 2.4rem;
     font-family: 'Signika Negative', sans-serif;
+    color: var(--complement-color);
 }
 
 .top-register-explain p {
-    color: #afafaf;
+    color: #797575;
     font-family: 'Inter', sans-serif;
     font-size: 0.7rem;
 }
@@ -102,7 +105,7 @@
     left: 10px;
     font-size: 0.8rem;
     font-family: 'Inter', sans-serif;
-    background-color: white;
+    background-color:var(--primary-color);
     color: #646464;
     padding: 0 6px;
 }
@@ -117,18 +120,18 @@
     margin-bottom: 1.8rem;
     padding: 15px;
     padding-top: 22px;
-    border: #dadcdd solid 1px;
+    border:#a8acbf solid 1px;
     border-radius: 5px;
     font-size: 0.8rem;
     color: #646464;
 }
 
 .register-big-wrapper form input:focus-within {
-    border: #0205b1 solid 1px;
+    border: var(--focus-color) solid 1px;
 }
 
 .register-big-wrapper form input:focus+label {
-    color: #0205b1 !important;
+    color: var(--focus-color) !important;
 }
 
 .register-screen__forgotpassword {
@@ -137,7 +140,7 @@
     font-family: 'Inter', sans-serif;
     font-size: 0.7rem;
     margin-top: -13px;
-    color: rgb(13, 16, 163);
+    color: var(--focus-color);
     font-weight: 600;
     cursor: pointer;
     padding: 3px 6px;
@@ -147,7 +150,7 @@
     cursor: pointer;
     border: none;
     outline: 0;
-    background-color: #0205b1;
+    background-color: var(--focus-color);
     width: 100%;
     text-align: center;
     color: white;
